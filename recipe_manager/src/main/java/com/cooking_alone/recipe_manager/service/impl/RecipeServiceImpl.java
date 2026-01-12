@@ -13,4 +13,11 @@ public class RecipeServiceImpl implements RecipeService {
 
         return recipeDTO;
     }
+
+    @Override
+    public RecipeDTO readRecipe(String uuid) {
+        RecipeDTO dummy = new RecipeDTO();
+        dummy.setBody("Step 1: Shake your bacon");
+        return dummy;
+    }
 }

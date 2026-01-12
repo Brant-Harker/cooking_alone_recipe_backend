@@ -26,4 +26,11 @@ public class RecipeController {
 
         return responseEntity;
     }
+
+    @GetMapping("/read/{id}")
+    public ResponseEntity<RecipeDTO> readRecipe(@PathVariable String id){
+        RecipeDTO returnDTO = recipeService.readRecipe(id);
+        ResponseEntity<RecipeDTO> responseEntity = new ResponseEntity<>(returnDTO, HttpStatus.OK);
+        return responseEntity;
+    }
 }

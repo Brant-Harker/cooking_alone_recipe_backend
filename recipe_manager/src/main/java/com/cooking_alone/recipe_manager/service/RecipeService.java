@@ -5,4 +5,6 @@ import com.cooking_alone.recipe_manager.dto.RecipeDTO;
 public interface RecipeService {
 
     RecipeDTO saveRecipe(RecipeDTO recipeDTO);
+
+    RecipeDTO readRecipe(String uuid);
 }
